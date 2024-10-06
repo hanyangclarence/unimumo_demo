@@ -63,7 +63,7 @@ h2,h3 {
 
 h1 {
     font-size: 43px;
-    font-weight: 520;
+    font-weight: 500;
 }
 h2 {
     font-weight: 400;
@@ -109,7 +109,7 @@ section {
 }
 
 .author-row, .affil-row {
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .author-row-new { 
@@ -118,21 +118,39 @@ section {
 
 .author-row-new a {
     display: inline-block;
-    font-size: 16px;
+    font-size: 22px;
     padding: 4px;
+}
+
+.author-row-new div {
+  display: inline-block;
+  font-size: 22px;
+  padding: 4px;
 }
 
 .author-row-new sup {
     color: #313436;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 .affiliations-new {
-    font-size: 18px;
+    font-size: 10px;
     text-align: center;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 20px;
+}
+
+.link-row {
+  text-align: center;
+  color: #313436;
+}
+
+.link-row a {
+    display: inline-block;
+    font-size: 22px;
+    padding: 4px;
+    color: #EEEEEE;
 }
 
 .row {
@@ -142,7 +160,7 @@ section {
     font-size: 26px;
 }
 .affiliatons {
-    font-size: 18px;
+    font-size: 10px;
 }
 .affil-row {
     margin-top: 18px;
@@ -432,6 +450,11 @@ pre {
 }
 
 
+.link-block a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 
 
 
@@ -472,24 +495,105 @@ pre {
         <meta name="twitter:title" content="">
         <meta name="twitter:description" content="UniMuMo: Unified Text, Music and Motion Generation">
         <meta name="twitter:image" content="">
+
+        <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+        <!-- <link rel="stylesheet" href="./static/css/bulma.min.css"> -->
+        <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+        <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+        <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        <link rel="stylesheet" href="./static/css/index.css">
+        <link rel="icon" href="./static/images/favicon.svg">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="./static/js/fontawesome.all.min.js"></script>
+        <script src="./static/js/bulma-carousel.min.js"></script>
+        <script src="./static/js/bulma-slider.min.js"></script>
+        <script src="./static/js/index.js"></script>
+
+
     </head>
 
  <body>
 
 <div class="container">
     <div class="paper-title">
-    <h1> 
-      UniMuMo: Unified Text, Music, and Motion Generation
-    </h1>
-        <h1 style="text-align: center;">
-            Supplementary Materials
-        </h1>
-        <h2 style="text-align: center;">
-            AAAI 2025 Submission
-        </h2>
-        <h2 style="text-align: center;">
-            Paper ID 2405
-        </h2>
+      <h1> 
+        UniMuMo: Unified Text, Music, and Motion Generation
+      </h1>
+      <div class="author-row-new">
+        <a href="hanyangclarence.github.io">Han Yang</a><sup>1</sup>,
+        <a href="https://kun-su.netlify.app/">Kun Su</a><sup>2</sup>,
+        <div>Yutong Zhang</div><sup>3</sup>,
+        <a href="https://jiabenchen.github.io/">Jiaben Chen</a><sup>4</sup>,
+        <a href="https://scholar.google.com/citations?user=uEpr4C4AAAAJ&hl=en">Kaizhi Qian</a><sup>5</sup>,
+        <a href="?">Gaowen Liu</a>,
+        <a href="https://people.csail.mit.edu/ganchuang/">Chuang Gan</a><sup>4, 5</sup>
+      </div>
+      <div class="affiliations-new">
+        <div class="affil-row"><sup>1</sup>The Chinese University of Hong Kong, 
+                                <sup>2</sup>University of Washington, 
+                                <sup>3</sup>The University of British Columbia, 
+                                <sup>4</sup>UMass Amherst,
+                                <sup>5</sup>MIT-IBM Watson AI Lab
+        </div>
+      </div>
+
+
+
+
+      <div class="link-row">
+
+        <div class="publication-links">
+          <!-- PDF Link. -->
+          <span class="link-block">
+            <a href="https://www.google.com/"
+               class="external-link button">
+              <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+              </span>
+              <span>arXiv</span>
+            </a>
+          </span>
+          <!-- Video Link. -->
+          <!-- <span class="link-block">
+            <a href="https://www.youtube.com/watch?v=EZ9CgknV9Z4"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fab fa-youtube"></i>
+              </span>
+              <span>Video</span>
+            </a>
+          </span> -->
+          <!-- Code Link. -->
+          <span class="link-block">
+            <a href="https://www.google.com/"
+               class="external-link button">
+              <span class="icon">
+                  <i class="fab fa-github"></i>
+              </span>
+              <span>Code</span>
+              </a>
+          </span>
+          <!-- Dataset Link. -->
+          <!-- <span class="link-block">
+            <a href="https://github.com/JiabenChen/iQuery"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="far fa-images"></i>
+              </span>
+              <span>Data</span>
+              </a>
+            </span> -->
+        </div>  
+
+
+      </div>
+
+
+
+
     </div>
 
 
