@@ -1,0 +1,1073 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<script src="bootstrap.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
+<!---
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+--->
+<script src="load-mathjax.js" async></script>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mirror: F0%9F%AA%9E&lt -->
+<link rel="stylesheet" href="UNIMUMO_files/bootstrap.min.css">
+<link rel="stylesheet" href="UNIMUMO_files/app.css">
+<link rel="stylesheet" href="UNIMUMO_files/index.css">
+<link rel="stylesheet" href="UNIMUMO_files/select.css">
+<script src="UNIMUMO_files/bootstrap.min.js"></script>
+<script src="UNIMUMO_files/video_comparison.js"></script>
+<script src="UNIMUMO_files/select.js"></script>
+<script src="UNIMUMO_files/index.js"></script>
+<script src="resources/glide.min.js"></script>
+
+
+<style type="text/css">
+body {
+    font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 980px){
+    body {
+        width: 1080px;
+    }
+}
+
+
+h1 {
+    font-weight:300;
+    line-height: 1.15em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+a:link,a:visited {
+    color: #5364cc;
+    text-decoration: none;
+}
+a:hover {
+    color: #208799;
+}
+h1 {
+    text-align: center;
+}
+h2,h3 {
+    text-align: left;
+}
+
+h1 {
+    font-size: 43px;
+    font-weight: 520;
+}
+h2 {
+    font-weight: 400;
+    margin: 16px 0px 4px 0px;
+}
+h3 {
+    font-weight: 600;
+    margin: 16px 0px 4px 0px;
+}
+
+.paper-title {
+    padding: 1px 0px 1px 0px;
+}
+section {
+    margin: 32px 0px 32px 0px;
+    text-align: justify;
+    clear: both;
+}
+.col-5 {
+     width: 20%;
+     float: left;
+}
+
+.move-down {
+    margin-top:1.2cm;
+}
+
+.col-4 {
+     width: 25%;
+     float: left;
+}
+.col-3 {
+     width: 33%;
+     float: left;
+}
+.col-2 {
+     width: 50%;
+     float: left;
+}
+.col-1 {
+     width: 100%;
+     float: left;
+}
+
+.author-row, .affil-row {
+    font-size: 26px;
+}
+
+.author-row-new { 
+    text-align: center; 
+}
+
+.author-row-new a {
+    display: inline-block;
+    font-size: 16px;
+    padding: 4px;
+}
+
+.author-row-new sup {
+    color: #313436;
+    font-size: 12px;
+}
+
+.affiliations-new {
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin: 16px 0px 16px 0px;
+}
+.authors {
+    font-size: 26px;
+}
+.affiliatons {
+    font-size: 18px;
+}
+.affil-row {
+    margin-top: 18px;
+}
+.teaser {
+    max-width: 100%;
+}
+.text-center {
+    text-align: center;  
+}
+.screenshot {
+    width: 256px;
+    border: 1px solid #ddd;
+}
+.screenshot-el {
+    margin-bottom: 16px;
+}
+hr {
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ddd;
+    margin: 0;
+}
+.material-icons {
+    vertical-align: -6px;
+}
+p {
+    line-height: 1.25em;
+}
+.caption {
+    font-size: 16px;
+    color: #666;
+    margin-top: 4px;
+    margin-bottom: 10px;
+	text-align: left;
+}
+
+
+video {
+    display: block;
+    margin: auto;
+}
+
+audio {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+figure {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#bibtex pre {
+    font-size: 14px;
+    background-color: #eee;
+    padding: 16px;
+}
+.blue {
+    color: #2c82c9;
+    font-weight: bold;
+}
+.orange {
+    color: #d35400;
+    font-weight: bold;
+}
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  flex: 0 0 33%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.flex-item-small {
+  flex: 0 0 25%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.paper-btn-coming-soon {
+    position: relative; 
+    top: 0;
+    left: 0;
+}
+
+.coming-soon {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+
+.center {
+  margin-left: 10.0%;
+  margin-right: 10.0%;
+}
+
+.paper-btn {
+  position: relative;
+  text-align: center;
+
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 8px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  
+  background-color: #5364cc;
+  color: white !important;
+  font-size: 20px;
+  width: 100px;
+  font-weight: 600;
+}
+
+.paper-btn-tapestry {
+  position: relative;
+  text-align: center;
+
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 8px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  
+  background-color: #5364cc;
+  color: white !important;
+  font-size: 20px;
+  width: 200px;
+  font-weight: 600;
+}
+
+.paper-btn-parent {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+}
+
+.paper-btn:hover {
+    opacity: 0.85;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.venue {
+    font-size: 23px;
+}
+
+.topnav {
+    background-color: #EEEEEE;
+    overflow: hidden;
+}
+
+.topnav div {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+.topnav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.topnav img {
+    padding: 2px 0px;
+    width: 100%;
+    margin: 0.2em 0px 0.3em 0px;
+    vertical-align: middle;
+}
+
+pre {
+    font-size: 0.9em;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 3px;
+    background-color: rgb(235, 235, 235);
+    overflow-x: auto;
+}
+
+.download-thumb {
+    display: flex;
+}
+
+@media only screen and (max-width: 620px) {
+    .download-thumb {
+        display: none;
+    }
+}
+
+.paper-stuff {
+    width: 50%;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 620px) {
+    .paper-stuff {
+        width: 100%;
+    }
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  text-align: center;
+  float: left;
+  width: 16.666%;
+  padding: 5px;
+}
+.column3 {
+  text-align: center;
+  float: left;
+  width: 33.333%;
+  padding: 5px;
+}
+.column4 {
+  text-align: center;
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.column5 {
+  text-align: center;
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+.column10 {
+  text-align: center;
+  float: left;
+  width: 10%;
+  padding: 5px;
+}
+.border-right {
+    border-right: 1px solid black;
+}
+.border-bottom{
+    border-bottom: 1px solid black;
+}
+
+
+.row-center {
+    margin: 16px 0px 16px 0px;
+    text-align: center;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.figure-img {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+
+
+
+
+
+
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+
+
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .column3 {
+    width: 100%;
+  }
+}
+
+</style>
+<link rel="stylesheet" href="bootstrap-grid.css">
+
+<script type="text/javascript" src="../js/hidebib.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+    <head>
+        <title> UniMuMo Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:description" content="UniMuMo: Unified Text, Music, and Motion Generation"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="UniMuMo: Unified Text, Music and Motion Generation">
+        <meta name="twitter:image" content="">
+    </head>
+
+ <body>
+
+<div class="container">
+    <div class="paper-title">
+    <h1> 
+      UniMuMo: Unified Text, Music, and Motion Generation
+    </h1>
+        <h1 style="text-align: center;">
+            Supplementary Materials
+        </h1>
+        <h2 style="text-align: center;">
+            AAAI 2025 Submission
+        </h2>
+        <h2 style="text-align: center;">
+            Paper ID 2405
+        </h2>
+    </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+    <h2>More Examples</h2>
+
+
+
+
+    <hr>
+    <h2>
+        Text &rarr; Music + Motion
+    </h2>
+    <div>
+        This table presents examples of UniMuMo's text-to-music-motion generation. The text prompts are randonly selected from our synthesized music and motion descriptions and paired with each other.
+    </div>
+
+    <div class="flex-row">
+        <div class="flex-container">
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline  class="video-background">
+                <source src="video/text2mumo/8UZBoyRDWgiXbbjJ.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a rock song. This is a break style dance.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/text2mumo/dwzQcAiaACdQ12fO.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The music is a mix of indie pop and indie rock. The genre of the dance is house.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/text2mumo/KMOqIJ4fwXMIXVow.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a k-pop song. This is a krump style dance.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/text2mumo/Tfu7CytIc9UiU5ja.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a song with a fast tempo, upbeat rhythm, and a catchy melody. The genre of the dance is LA style hip-hop.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/text2mumo/SCn6Tzbb9Pba9avd.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a latin pop song. The style of the dance is lock.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/text2mumo/vrJz1YLmRqEKyol6.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a pop song with a j-pop influence. The genre of the dance is middle hip-hop.
+            </figure>
+          </div>
+            <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/text2mumo/SoqnVpsc4L1Vs7by.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a disco song with a pop influence. This is a waack style dance.
+            </figure>
+          </div>
+            <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/text2mumo/tslFB904a7y2zHmK.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a pop song with a fast tempo, infectious drumming, keyboard harmony, and a groovy bass line. The style of the dance is krump.
+            </figure>
+          </div>
+            <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/text2mumo/ZwMlM8WgFcfLxbTa.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The music is a chillwave genre. The style of the dance is break.
+            </figure>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    <hr>
+    <h2>
+        Motion + Text &rarr; Music
+    </h2>
+    <div>
+        This table presents examples of UniMuMo's motion-text-to-music generation. The motion sequences are selected from the test set of AIST++, paired randomly with our
+        synthesized music descriptions. Note that in the videos shown below, only the audio part is generated by ours.
+    </div>
+
+    <div class="flex-row">
+        <div class="flex-container">
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline  class="video-background">
+                <source src="video/motext2mu/gKR_sFM_cAll_d30_mKR0_ch15.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a rock song with elements of alternative rock.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/motext2mu/gLH_sBM_cAll_d18_mLH2_ch05.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a pop song with a soulful feel.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/motext2mu/gMH_sBM_cAll_d24_mMH4_ch06.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a power pop/rock song with a catchy melody and upbeat rhythm.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/motext2mu/gLH_sFM_cAll_d18_mLH5_ch20.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a reggae pop song.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/motext2mu/gMH_sBM_cAll_d24_mMH4_ch05.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a K-pop song with a fast tempo, punchy drumming, funky bass lines, keyboard harmony, and synthesiser arrangements.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/motext2mu/gLO_sBM_cAll_d15_mLO5_ch10.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a dancehall song with a reggae influence.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/motext2mu/gLH_sBM_cAll_d18_mLH4_ch05.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a pop song with a new wave influence.
+            </figure>
+          </div>
+            <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/motext2mu/gWA_sBM_cAll_d27_mWA2_ch06.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The music is a fusion of pop punk and rock, with a strong emphasis on the drums and bass.
+            </figure>
+          </div>
+            <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/motext2mu/gBR_sFM_cAll_d06_mBR4_ch20.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The audio is a classic rock song with a fast tempo, catchy rhythm, and upbeat melody.
+            </figure>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    <hr>
+    <h2>
+        Music + Text &rarr; Motion
+    </h2>
+    <div>
+        This table presents examples of UniMuMo's music-text-to-motion generation. The music tracks are selected from the test set of Music4All, paired randomly with our
+        synthesized motion descriptions. Note that in the videos shown below, only the motion part is generated by ours.
+    </div>
+
+    <div class="flex-row">
+        <div class="flex-container">
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline  class="video-background">
+                <source src="video/mutext2mo/9XuHsLPy8AFx5Ify.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The style of the dance is ballet jazz.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/mutext2mo/cKEbpvrEC8OkPmFm.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The style of the dance is break.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/mutext2mo/2z29YJphtXmG8xqV.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The genre of the dance is house.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/mutext2mo/3E41bOE3t4tjHaD7.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The genre of the dance is krump.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/mutext2mo/AeKowzEU6IEBEOME.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The style of the dance is LA style hip-hop.
+            </figure>
+          </div>
+          <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/mutext2mo/5fWfWhyfcVXn3bWA.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              This is a lock style dance.
+            </figure>
+          </div>
+            <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/mutext2mo/7vQWbcJecgIviQ7j.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              This is a middle hip-hop style dance.
+            </figure>
+          </div>
+            <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/mutext2mo/FsnPlhOrAydTRTTr.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The genre of the dance is waack.
+            </figure>
+          </div>
+            <div class="flex-item">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/mutext2mo/AUuAm8U6ScZR2pEY.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              The style of the dance is LA style hip-hop.
+            </figure>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    <hr>
+    <h2>
+        Music &rarr; Text
+    </h2>
+    <div>
+        This table presents examples of UniMuMo's music-to-text generation. The music tracks are randomly selected from the test set of MusicQA dataset.
+    </div>
+
+    <div class="flex-row">
+        <div class="flex-container">
+          <div class="flex-item-small">
+            <figure>
+              <audio controls>
+                <source src="music/music2text/012708.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              The audio is a rock song with a strong emphasis on the drums, bass, and guitar.
+            </figure>
+          </div>
+          <div class="flex-item-small">
+            <figure>
+              <audio controls>
+                <source src="music/music2text/012725.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              The audio is a reggae song with a roots reggae feel.
+            </figure>
+          </div>
+          <div class="flex-item-small">
+            <figure>
+              <audio controls>
+                <source src="music/music2text/012565.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              The music is a mix of progressive rock and classic rock, with a strong emphasis on the guitar and drums.
+            </figure>
+          </div>
+          <div class="flex-item-small">
+            <figure>
+              <audio controls>
+                <source src="music/music2text/012673.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+               The audio is a techno song with a fast tempo, synthesiser arrangements, digital drumming, and a strong bass line.
+            </figure>
+          </div>
+          <div class="flex-item-small">
+            <figure>
+              <audio controls>
+                <source src="music/music2text/012567.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              The music is a mix of post-punk and new wave, with a strong emphasis on the drums and bass.
+            </figure>
+          </div>
+          <div class="flex-item-small">
+            <figure>
+              <audio controls>
+                <source src="music/music2text/012755.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              The music is a mix of electronic and acoustic instruments, with a focus on synthesizers and electronic percussion.
+            </figure>
+          </div>
+            <div class="flex-item-small">
+            <figure>
+              <audio controls>
+                <source src="music/music2text/012608.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              The music is described as ambient, which means it has a calm and soothing atmosphere.
+            </figure>
+          </div>
+            <div class="flex-item-small">
+            <figure>
+              <audio controls>
+                <source src="music/music2text/012633.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              The music is a slow and melancholic folk song with a lo-fi recording quality.
+            </figure>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <hr>
+      <h2>
+          Motion &rarr; Text
+      </h2>
+      <div>
+          This table presents examples of UniMuMo's motion-to-text generation. The motion sequences are randomly selected
+          from the test set of HumanML3D dataset.
+      </div>
+
+      <div class="flex-row">
+          <div class="flex-container">
+            <div class="flex-item-small">
+              <figure>
+                <video class="centered" width="100%" controls playsinline class="video-background">
+                  <source src="video/motion2text/004865.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                A person steps backwards, sits down, stands up and steps forward again.
+              </figure>
+            </div>
+            <div class="flex-item-small">
+              <figure>
+                <video class="centered" width="100%" controls playsinline class="video-background">
+                  <source src="video/motion2text/005141.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                A person jumps and spins 180 degrees.
+              </figure>
+            </div>
+            <div class="flex-item-small">
+              <figure>
+                <video class="centered" width="100%" controls playsinline class="video-background">
+                  <source src="video/motion2text/005747.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                A person is doing the chacha dance.
+              </figure>
+            </div>
+            <div class="flex-item-small">
+              <figure>
+                <video class="centered" width="100%" controls playsinline class="video-background">
+                  <source src="video/motion2text/007318.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                 A person side steps to the right and then to the left.
+              </figure>
+            </div>
+            <div class="flex-item-small">
+              <figure>
+                <video class="centered" width="100%" controls playsinline class="video-background">
+                  <source src="video/motion2text/007708.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                A person holds their arms up and twists their torso around.
+              </figure>
+            </div>
+            <div class="flex-item-small">
+              <figure>
+                <video class="centered" width="100%" controls playsinline class="video-background">
+                  <source src="video/motion2text/007886.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                A person bounces their arms up and down while moving their elbows up and down.
+              </figure>
+            </div>
+              <div class="flex-item-small">
+              <figure>
+                <video class="centered" width="100%" controls playsinline class="video-background">
+                  <source src="video/motion2text/008720.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                A person raises their arms and then kneels down.
+              </figure>
+            </div>
+              <div class="flex-item-small">
+              <figure>
+                <video class="centered" width="100%" controls playsinline class="video-background">
+                  <source src="video/motion2text/010298.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                A person leans to the left and looks around.
+              </figure>
+            </div>
+          </div>
+        </div>
+
+
+    <hr>
+    <h2>
+          Music Motion Alignment
+    </h2>
+    <div>
+        This table presents examples of our proposed music-motion alignment methods. In each row, a motion sequence is paired with different music tracks.
+        Music and motion are all from AIST++ dataset.
+    </div>
+    <div class="flex-row">
+
+        <div class="flex-container">
+          <div class="flex-item-small">
+            <figure>
+              <video class="centered" width="100%" controls playsinline  class="video-background">
+                <source src="video/data_alignment/gWA_sBM_cAll_d27_mWA3_ch07_mBR0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+          </div>
+          <div class="flex-item-small">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/data_alignment/gWA_sBM_cAll_d27_mWA3_ch07_mHO0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+          </div>
+          <div class="flex-item-small">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/data_alignment/gWA_sBM_cAll_d27_mWA3_ch07_mJB0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+          </div>
+          <div class="flex-item-small">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/data_alignment/gWA_sBM_cAll_d27_mWA3_ch07_mLH0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+          </div>
+          <div class="flex-item-small">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/data_alignment/gWA_sFM_cAll_d27_mWA2_ch21_mBR0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+          </div>
+          <div class="flex-item-small">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/data_alignment/gWA_sFM_cAll_d27_mWA2_ch21_mHO0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+          </div>
+            <div class="flex-item-small">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/data_alignment/gWA_sFM_cAll_d27_mWA2_ch21_mJB0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+          </div>
+            <div class="flex-item-small">
+            <figure>
+              <video class="centered" width="100%" controls playsinline class="video-background">
+                <source src="video/data_alignment/gWA_sFM_cAll_d27_mWA2_ch21_mLH0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+
+
+
+<hr>
+
+    
+
+
+</div>
+</body>
+</html>
