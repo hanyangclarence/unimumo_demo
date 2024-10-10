@@ -82,6 +82,23 @@ h3 {
   text-align: center;
 }
 
+.video-container {
+  position: relative;
+  width: 80%; /* Set the width to 80% of the container */
+  padding-bottom: 56.25%; /* This gives the 16:9 aspect ratio (9/16 = 0.5625 or 56.25%) */
+  height: 0; /* Set height to zero to allow padding to control height */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Set iframe width to fill the container */
+  height: 80%; /* Set iframe height to fill the container */
+  border-radius: 15px;
+}
+
 .abstract h1 {
     font-size: 32px;
     font-weight: 400;
@@ -617,6 +634,25 @@ pre {
       </div>
     </div>
 
+
+
+    <div class="abstract" style="align-items: center; padding-bottom: 20px;">
+      <h1>Video Demo</h1>
+    </div>
+
+    <div class="abstract video-container" style="align-items:center">
+      <iframe
+        src="https://www.youtube.com/embed/asa2bAIqOLg" 
+        title="Video Demo" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe> 
+    </div>
+
+    <div class="abstract" style="align-items: center; padding-top: -30px; padding-bottom: 20px;">
+      <hr>
+    </div>
     
 
     <div class="abstract" style="align-items:center">
@@ -660,7 +696,7 @@ pre {
 
 
     <div class="abstract">
-      <h1>Qualitative Results</h1>
+      <h1>More Qualitative Results</h1>
       <h2 style="text-align: center; margin-top: -4px;">(Please turn the audio on)</h2>
     </div>
 
